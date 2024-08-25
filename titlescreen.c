@@ -10,6 +10,8 @@
 
 #include "globals.h"
 
+#include "icons.c"
+
 typedef struct {
 	const Scalar x;
 	const Scalar y;
@@ -104,9 +106,17 @@ const map LOGO[]  = {
 	// oben links + rechts 1 Rand
 };
 
+#define WAIT 2
+
 static void drawTitleScreen() {
 	for (const map* draw = LOGO; draw->tile; draw++) {
-		WaitVsync(2);
+		WaitVsync(WAIT);
 		DrawMap( 12 + draw->x, 9 + draw->y, draw->tile );
+	}
+
+	for (Scalar i = 0; i < 6; i++) {
+		WaitVsync(WAIT);
+		drawIcon(7,  3  + i*4, i);
+		drawIcon(31, 23 - i*4, i);
 	}
 }

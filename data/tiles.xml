@@ -15,17 +15,33 @@
     <maps pointers-size="16">
       <map var-name="t_black"         left="0" top="0" width="1" height="1"/>
 
-      <map var-name="border_tl"       left="1" top="0" width="1" height="1"/>
-      <map var-name="border_h"        left="2" top="0" width="1" height="1"/>
-      <map var-name="border_tr"       left="3" top="0" width="1" height="1"/>
+      <map var-name="border_tl"       left="2" top="0" width="1" height="1"/>
+      <map var-name="border_h"        left="3" top="0" width="1" height="1"/>
+      <map var-name="border_tr"       left="4" top="0" width="1" height="1"/>
 
-      <map var-name="border_vr"       left="1" top="1" width="1" height="1"/>
-      <map var-name="border_v"        left="2" top="1" width="1" height="1"/>
-      <map var-name="border_vl"       left="3" top="1" width="1" height="1"/>
+      <map var-name="border_vr"       left="2" top="1" width="1" height="1"/>
+      <map var-name="border_v"        left="3" top="1" width="1" height="1"/>
+      <map var-name="border_vl"       left="4" top="1" width="1" height="1"/>
 
-      <map var-name="border_bl"       left="1" top="2" width="1" height="1"/>
-<!--  <map var-name="border_h"        left="2" top="2" width="1" height="1"/>  duplicate :) -->
-      <map var-name="border_br"       left="3" top="2" width="1" height="1"/>
+      <map var-name="border_bl"       left="2" top="2" width="1" height="1"/>
+<!--  <map var-name="border_h"        left="3" top="2" width="1" height="1"/>  duplicate :) -->
+      <map var-name="border_br"       left="4" top="2" width="1" height="1"/>
+
+
+      <map var-name="iconset_empty"   left="0" top="0" width="2" height="2"/>
+
+      <map var-name="iconsetA_1u"     left="14" top="0" width="2" height="1"/>
+      <map var-name="iconsetA_1l"     left="14" top="1" width="2" height="1"/>
+      <map var-name="iconsetA_2u"     left="16" top="0" width="2" height="1"/>
+      <map var-name="iconsetA_2l"     left="16" top="1" width="2" height="1"/>
+      <map var-name="iconsetA_3u"     left="18" top="0" width="2" height="1"/>
+      <map var-name="iconsetA_3l"     left="18" top="1" width="2" height="1"/>
+      <map var-name="iconsetA_4u"     left="20" top="0" width="2" height="1"/>
+      <map var-name="iconsetA_4l"     left="20" top="1" width="2" height="1"/>
+      <map var-name="iconsetA_5u"     left="22" top="0" width="2" height="1"/>
+      <map var-name="iconsetA_5l"     left="22" top="1" width="2" height="1"/>
+      <map var-name="iconsetA_6u"     left="24" top="0" width="2" height="1"/>
+      <map var-name="iconsetA_6l"     left="24" top="1" width="2" height="1"/>
     </maps>
   </output>
 </gfx-xform>
