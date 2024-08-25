@@ -1,0 +1,19 @@
+<?xml version="1.0" ?>
+<!--
+ * hasischnucki - a match-three game for uzebox
+ *
+ * Copyright (C) 2024 by  Christian Garbs <mitch@cgarbs.de>
+ * licensed under the GNU GPL v3 or later
+ *
+ * see https://github.com/mmitch/uzepede
+ *
+-->
+<gfx-xform version="1">
+  <input file="../data/tiles.png" type="png" tile-width="6" tile-height="8"/>
+  <output file="../data/tiles.inc">
+    <tiles var-name="Tiles"/>
+    <maps pointers-size="16">
+      <map var-name="t_black"         left="0" top="0" width="1" height="1"/>
+    </maps>
+  </output>
+</gfx-xform>
