@@ -6,7 +6,7 @@
 #UZEBOX_DIR = ../../uzebox
 UZEBOX_DIR = /home/mitch/git/uzebox
 
-VERSION=v0.00-GIT
+VERSION=0.01
 
 ## General Flags
 PROJECT = hasischnucki
