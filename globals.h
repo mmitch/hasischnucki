@@ -19,7 +19,7 @@
 #include <stdio.h>
 
 #include "data/tiles.inc"
-#include "data/patches.inc"
+#include "data/patches.h"
 
 typedef u8  Scalar;
 typedef u8  Boolean;
