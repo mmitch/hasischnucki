@@ -106,7 +106,7 @@ const Map LOGO[]  = {
 	// oben links + rechts 1 Rand
 };
 
-#define WAIT 2
+#define WAIT 1
 
 static void drawTitleScreen() {
 	for (const Map* draw = LOGO; draw->tile; draw++) {

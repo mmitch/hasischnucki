@@ -8,6 +8,9 @@
  *
  */
 
+#ifndef _ICONS_C_
+#define _ICONS_C_
+
 #include "globals.h"
 
 static const Tile *ICONS[12] = {
@@ -23,3 +26,5 @@ static void drawIcon(const Scalar x, const Scalar y, const Scalar icon) {
 	DrawMap( x, y,   ICONS[icon*2]   );
 	DrawMap( x, y+1, ICONS[icon*2+1] );
 }
+
+#endif
