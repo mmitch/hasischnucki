@@ -8,21 +8,20 @@
  *
  */
 
-#include <avr/io.h>
-#include <stdlib.h>
-#include <avr/pgmspace.h>
-#include <uzebox.h>
-#include <math.h>
-#include <stdio.h>
-
-#include "data/tiles.inc"
-#include "data/patches.inc"
+// directly including .c files - yuck :)
+// This will allow for proper code separation,
+// but won't give is incremental builds.
+// But this bit of code will compile fast anyway.
+#include "titlescreen.c"
 
 int main(){
 
-  SetTileTable(Tiles);
-  InitMusicPlayer(patches);
+	SetTileTable(Tiles);
+	InitMusicPlayer(patches);
+	Fill(0, 0, 40, 28, 0);
 
-  while(1);
+	drawTitleScreen();
+
+	while(1);
 
 }
