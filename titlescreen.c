@@ -16,11 +16,11 @@ typedef struct {
 	const Scalar x;
 	const Scalar y;
 	const Tile  *tile;
-} map;
+} Map;
 
 // FIXME: why does the iterative access not work with PROGMEM, neither indexed nor pointered?
 // TODO: redraw t-tiles on a second pass? first pass only corner/straight?
-const map LOGO[]  = {
+const Map LOGO[]  = {
 	{  1, 0, border_v  }, // H
 	{  1, 1, border_v  },
 	{  1, 2, border_v  },
@@ -109,7 +109,7 @@ const map LOGO[]  = {
 #define WAIT 2
 
 static void drawTitleScreen() {
-	for (const map* draw = LOGO; draw->tile; draw++) {
+	for (const Map* draw = LOGO; draw->tile; draw++) {
 		WaitVsync(WAIT);
 		DrawMap( 12 + draw->x, 9 + draw->y, draw->tile );
 	}
