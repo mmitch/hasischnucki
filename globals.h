@@ -23,7 +23,7 @@
 
 typedef u8  Scalar;
 typedef u8  Boolean;
-typedef int Tile;
+typedef char Tile;
 typedef u16 Joypad;
 typedef unsigned int BigScalar;
 
